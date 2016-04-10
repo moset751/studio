@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+<title>Drag and drop</title>
+
+
+
+
+
+
+<style type="text/css">
+
+
+
+    .dragme {
+        position:absolute;
+        width: 103px;
+        height:103px;
+        cursor: move;
+       
+    }
+
+
+
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(Klima-Medium.otf);
+}
+
+div {
+   font-family: myFirstFont;
+}
+
+@font-face {
+   font-family: myFirstFontever;
+   src: url(Klima-Heavy.otf);
+}
+
+div {
+   font-family: myFirstFontever;
+}
+
+@font-face {
+   font-family: NewSchoolFont;
+   src: url(Neue-Black.otf);
+}
+
+div {
+   font-family: NewSchoolFont;
+}
+
+  
+    #content { text-decoration:none; margin: 0;font-size: 76pt; position: relative; font-weight: bold; z-index:-2;
+text-align: center;
+font-family:myFirstFontever;
+top: 50px;
+bottom: 0px;
+background-color: white;
+
+}
+
+    #content1 { text-decoration:none; margin: 0;font-size: 55pt; position: relative; font-weight: bold; z-index:-2;
+text-align: center;
+font-family:myFirstFontever;
+top: 70px;
+bottom: 0px;
+background-color: white;
+color:yellow;
+
+
+
+               }
+
+
+   #content3 { text-decoration:none; margin: 0;font-size: 26pt; position: relative; font-weight: bold; z-index:-2;
+text-align: center;
+font-family:myFirstFontever;
+top: 40px;
+bottom: 20px;
+opacity: 20%;
+color:grey;
+
+
+}
+
+
+
+
+
+               
+
+.doubleUnderline {
+    text-decoration:underline;
+    border-bottom: 9px solid;
+    border-top: 10px;
+    padding-top: 10px;
+}
+
+
+
+#background { margin: -20px 0 0 10px;font-size: 18pt; position: absolute;; color: purple; z-index:-1;top:900px;padding:5px;letter-spacing: 5px; font-family: myFirstFont;text-align: justify; background-color: white; line-height:50px; margin-right: 180px; margin-left: 179px;}
+
+a:link    {color:yellow; background-color:transparent; text-decoration:none}
+a:visited {color:black; background-color:transparent; text-decoration:none}
+a:hover   {color:blue; background-color:transparent; text-decoration:none;}
+
+
+span.dropt {top:10px;line-height: 20px; background: white; text-decoration: line-through; font-family: myFirstFont; text-align: center; text-indent: 2px; letter-spacing: 1px; }
+span.dropt:hover {text-decoration: none; background: white; z-index: 6; }
+span.dropt span {position: absolute: -5px;
+  margin: 50px 0 0 0px; font-size: 20px;text-align: left;
+ border-color:black; border-width:5px; z-index: 6;color: black;}
+span.dropt:hover span {left: 2%; background:black; margin-top:5px;} 
+span.dropt span {position: absolute; left: -9999px;
+   padding: 3px 3px 30px 3px; 
+  border-style:solid; border-color:black; border-width:1px;}
+span.dropt:hover span {background: white; z-index:6;} 
+
+
+.video {
+
+  padding-top: 150px;
+  padding-left: 500px;
+
+}
+
+
+
+
+               
+</style>
+<script type="text/javascript">
+        function startDrag(e) {
+            // determine event object
+            if (!e) {
+                var e = window.event;
+            }
+
+            // IE uses srcElement, others use target
+            var targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme') {return};
+            // calculate event X, Y coordinates
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            // assign default values for top and left properties
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+
+            // calculate integer values for top and left 
+            // properties
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+            // move div element
+                document.onmousemove=dragDiv;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            var targ=e.target?e.target:e.srcElement;
+            // move div element
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+<div id="draggable" class="dragme"></div>
+<img src="13.png" alt="Drag Me" 
+ title="drag-and-drop image script" class="dragme">
+
+ <div id="draggable" class="dragme"></div>
+<img src="15.png" alt="drag-and-drop image script" 
+ title="drag-and-drop image script" class="dragme">
+
+  <div id="draggable" class="dragme"></div>
+<img src="16.png" alt="drag-and-drop image script" 
+ title="drag-and-drop image script" class="dragme">
+
+   <div id="draggable" class="dragme"></div>
+<img src="17.png" alt="drag-and-drop image script" 
+ title="drag-and-drop image script" class="dragme">
+
+   <div id="draggable" class="dragme"></div>
+<img src="34.png" alt="drag-and-drop image script" 
+ title="drag-and-drop image script" class="dragme">
+
+   <div id="draggable" class="dragme"></div>
+<img src="12.png" alt="drag-and-drop image script" 
+ title="drag-and-drop image script" class="dragme">
+
+
+
+
+<div id="content">
+  <a>Frank Gehry</a></div>
+
+  <div id="content3">
+  <a>&</a></div>
+
+<div id="content1">
+  <a><span  style="font-family:NewSchoolFont;" class="doubleUnderline">THE NEW SCHOOL</span></a>
+</div>
+
+
+
+
+<div id="background">  
+ 
+<p>The New School's Parsons School of Design, in collaboration with The Guggenheim Museum, hosts <span style='text-decoration:line-through'>Frank Gehry</span>
+At The Parsons Table with Paul Goldberger on Thursday, November 12, 6-8 p.m. in Tishman
+Auditorium at The New School University Center, 63 Fifth Ave.
+In this intimate, one-on-one conversation, Goldberger, <span class="dropt"> Pulitzer Prize<span style="width:500px;">The Pulitzer Prize is an award for achievements in newspaper and online journalism, literature, and musical composition in the United States. It was established in 1917 by provisions in the will of American (Hungarian-born) Joseph Pulitzer who had made his fortune as a newspaper publisher, and is administered by Columbia University in New York City. Prizes are awarded yearly in twenty-one categories. In twenty of the categories, each winner receives a certificate and a US$10,000 cash award. The winner in the public service category of the journalism competition is awarded a gold medal.</span></span> -winning architectural critic and Joseph
+Urban Chair in Design and Architecture at Parsons, will engage Gehry on his life and work. Building Art: The
+Life and Work of <span style='text-decoration:line-through'>Frank Gehry</span>, Goldberger's recently published full-length biography on Gehry, will be available
+for purchase in the lobby of the University Center during the event.
+At the Parsons Table is an on-going series of conversational interviews with cultural luminaries hosted by
+Goldberger. These conversations provide exclusive insights into the creative process and innovative thinking
+of artists, designers, and industry leaders. At the Parsons Table guests have included such icons as Ralph
+Lauren, Mickey Drexler, Robert Wong, <span style='text-decoration:line-through' class="dropt" >Frank Gehry<span><img src="franki.jpg"></span></span>, Chuck Close, Bruce Mau, and Donna Karan.
+ress are invited to meet with Gehry and Goldberger immediately prior to the event
+
+
+One of the most inventive and pioneering architects working today, <span style='text-decoration:line-through'>Frank Gehry</span> has designed buildings that
+have become world-renowned attractions. His work includes The Disney Concert Hall, home of the Los Angeles
+philharmonic, 8 Spruce Street in New York City, the <span class="dropt"> Guggenheim Museum in Bilbao<span><img src="bilbao.jpg"></span></span>, Spain, and the Louis
+Vuitton Foundation building in Paris. Recently, Gehry agreed to design the Dwight D. Eisenhower Memorial in
+Washington D.C. and to undertake the redesign of the Los Angeles River.
+Paul Goldberger is a Pulitzer Prize-winning architectural critic and Joseph Urban Chair in Design and
+Architecture at Parsons. From 1997 through 2011, he served as the architecture critic for The New Yorker,
+where he wrote the magazine’s celebrated “Sky Line” column. He began his career at The New York Times,
+where, in 1984, he earned the Pulitzer Prize for Distinguished Criticism. He is formerly dean of the Parsons
+School of Design.</p>
+</div>
+
+<div class= "video">
+ <video  controls preload width="640" height="360">
+        <source src="fg.mp4"type="video/mp4" />
+     
+    </video>
+</div>

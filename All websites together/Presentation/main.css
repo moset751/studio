@@ -1,0 +1,18 @@
+.floated_img
+{
+    float: left;
+
+}
+.floated_img {
+  display: inline-block;
+  width: 200px;
+  height:200px;
+  zoom: 1;         /* for IE */
+  display*:inline; /* for IE */
+}
+
+
+		body {
+    background-image: url("1.gif")
+
+}

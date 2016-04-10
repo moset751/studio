@@ -1,0 +1,47 @@
+.content{
+position: relative;
+/*Add a height attribute and set to largest image's height to prevent overlaying*/
+}
+
+.background img{
+border: 1px solid white;
+margin: 0 5px 5px 0;
+}
+
+.background:hover{
+background-color: transparent;
+}
+
+
+.background span{ /*CSS for enlarged image*/
+position: absolute;
+background-color: lightyellow;
+padding: 5px;
+left: -1000px;
+border: 1px dashed gray;
+visibility: hidden;
+color: black;
+text-decoration: none;
+}
+
+.background span img{ /*CSS for enlarged image*/
+border-width: 0;
+padding: 2px;
+}
+
+.background:hover span{ /*CSS for enlarged image*/
+visibility: visible;
+top: 0;
+left: 230px; /*position where enlarged image should offset horizontally */
+z-index: 50;
+}
+
+
+
+}
+
+
+
+
+
+

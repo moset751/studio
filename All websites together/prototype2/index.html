@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Drag and drop</title>
+
+
+
+
+
+<style type="text/css">
+
+
+
+    .dragme {
+      position:absolute;
+        width: 570px;
+        height: 603px;
+        cursor:url('hammer.png'),auto;   
+         }
+
+           .dragme1 {
+      position:fixed;
+        width: 570px;
+        height: 603px;
+      
+         }
+
+               .dragme2 {
+      position:fixed;
+        width: 1670px;
+        height: 1003px;
+      
+         }
+
+
+
+
+@font-face {
+   font-family: myFirstFont;
+   src: url(Neue-Bold.otf);
+}
+
+div {
+   font-family: myFirstFont;
+}
+
+@font-face {
+   font-family: myFirstFont1;
+   src: url(Neue-Regular.otf);
+}
+
+div {
+   font-family: myFirstFont;
+}
+
+
+
+  
+    #content { text-decoration:none; margin: 0;font-size: 66pt; text-indent: 5px; position: relative; font-weight: bold; z-index:-2;text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+text-align: center;
+margin-top: 100px;
+margin-bottom: 60px;
+font-family: myFirstFont;
+border-radius: 4px;
+
+}
+
+
+
+
+#live {
+  position: fixed;
+ right: 500px;
+ font-family: Geneva;
+ font-size: 50px;
+ text-align: center;
+ z-index: 7;
+ animation: blinker 0.2s linear infinite;
+}
+
+@keyframes blinker {  
+   from { color: red; }
+   to { color: black; }
+ }
+
+
+
+
+#liveit {
+  position: fixed;
+ right: 735px;
+ top:335px;
+ font-family: Geneva;
+ font-size: 50px;
+ text-align: center;
+ z-index: 9;
+}
+
+
+#background { margin: -40px 0 0 10px;font-size: 30pt; position: absolute;; color: black; z-index:-1; text-indent: 100px; letter-spacing: 5px; margin-top: 20px; text-align: center; padding:1%; line-height: 70px; font-family:myFirstFont1; }
+
+a:link    {color:rgba(0,99,91,0); background-color:transparent; text-decoration:none}
+a:visited {color:black; background-color:transparent; text-decoration:none}
+a:hover   {color:red; background-color:transparent; text-decoration:none;}
+
+#pop {
+
+  height: 260px;
+  width: 500px;
+  margin-top:-50px;
+  top: -300px;
+  right:50%;
+  left:50%;
+  border: 2px solid;
+  padding: 10px;
+  background-color: white;
+  font-color:black;
+  font-family: helvetica;
+  z-index: -1;
+}
+
+
+.doubleUnderline {
+    text-decoration:underline;
+    border-bottom: 9px solid;
+    border-top: 10px;
+    padding-top: 20px;
+}
+
+
+</style>
+<script type="text/javascript">
+        function startDrag(e) {
+            // determine event object
+            if (!e) {
+                var e = window.event;
+            }
+
+            // IE uses srcElement, others use target
+            var targ = e.target ? e.target : e.srcElement;
+
+            if (targ.className != 'dragme2') {return};
+            // calculate event X, Y coordinates
+                offsetX = e.clientX;
+                offsetY = e.clientY;
+
+            // assign default values for top and left properties
+            if(!targ.style.left) { targ.style.left='0px'};
+            if (!targ.style.top) { targ.style.top='0px'};
+
+            // calculate integer values for top and left 
+            // properties
+            coordX = parseInt(targ.style.left);
+            coordY = parseInt(targ.style.top);
+            drag = true;
+
+            // move div element
+                document.onmousemove=dragDiv;
+
+        }
+        function dragDiv(e) {
+            if (!drag) {return};
+            if (!e) { var e= window.event};
+            var targ=e.target?e.target:e.srcElement;
+            // move div element
+            targ.style.left=coordX+e.clientX-offsetX+'px';
+            targ.style.top=coordY+e.clientY-offsetY+'px';
+            return false;
+        }
+        function stopDrag() {
+            drag=false;
+        }
+        window.onload = function() {
+            document.onmousedown = startDrag;
+            document.onmouseup = stopDrag;
+        }
+
+
+</script>
+
+</head>
+<body>
+
+  <script  
+
+type="text/javascript">
+    $(document).ready(function(){
+        $('#dragme').css('visibility', 'hidden');
+    });
+
+
+  </script>
+
+<div id="content">
+  <a>Frank Gehry at <span class="doubleUnderline">The New School</span></a>
+</div>
+<div id="background">
+<p>The New School's Parsons School of Design, in collaboration with The Guggenheim Museum, hosts Frank
+Gehry At The Parsons Table with Paul Goldberger on Thursday, November 12, 6-8 p.m. in Tishman
+Auditorium at The New School University Center, 63 Fifth Ave.
+In this intimate, one-on-one conversation, Goldberger, Pulitzer Prize-winning architectural critic and Joseph
+Urban Chair in Design and Architecture at Parsons, will engage Gehry on his life and work. Building Art: The
+Life and Work of Frank Gehry, Goldberger's recently published full-length biography on Gehry, will be available
+for purchase in the lobby of the University Center during the event.
+At the Parsons Table is an on-going series of conversational interviews with cultural luminaries hosted by
+Goldberger. These conversations provide exclusive insights into the creative process and innovative thinking
+of artists, designers, and industry leaders. At the Parsons Table guests have included such icons as Ralph
+Lauren, Mickey Drexler, Robert Wong, Frank Gehry, Chuck Close, Bruce Mau, and Donna Karan.
+ress are invited to meet with Gehry and Goldberger immediately prior to the event
+
+
+One of the most inventive and pioneering architects working today, Frank Gehry has designed buildings that
+have become world-renowned attractions. His work includes The Disney Concert Hall, home of the Los Angeles
+philharmonic, 8 Spruce Street in New York City, the Guggenheim Museum in Bilbao, Spain, and the Louis
+Vuitton Foundation building in Paris. Recently, Gehry agreed to design the Dwight D. Eisenhower Memorial in
+Washington D.C. and to undertake the redesign of the Los Angeles River.
+Paul Goldberger is a Pulitzer Prize-winning architectural critic and Joseph Urban Chair in Design and
+Architecture at Parsons. From 1997 through 2011, he served as the architecture critic for The New Yorker,
+where he wrote the magazine’s celebrated “Sky Line” column. He began his career at The New York Times,
+where, in 1984, he earned the Pulitzer Prize for Distinguished Criticism. He is formerly dean of the Parsons
+School of Design.</p>
+</div>
+
+
+<div id="live">
+<p>
+The event is being Livestreamed: </p>
+
+</div>
+
+<div id="liveit">
+<p>
+<a href="https://www.youtube.com/watch?v=sQIESc_cSnU">Watch it Now</a>
+</p>
+  </div>
+
+
+ 
+
+ <div id="draggable" class="dragme"></div>
+<img src="14.png" alt="drag-and-drop image script" 
+ title="drag-and-drop image script" class="dragme2">
+
+
+
+ </body
