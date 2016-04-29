@@ -1,0 +1,220 @@
+.user-count {
+
+ display: none;
+  padding-left: 93.99%;
+  font-family: myFirstFont;
+  font-size: 80px;
+  color:#3399ff;
+
+
+}
+
+
+
+.title {
+  
+  padding-top:50%;
+	margin-left: 60px;
+  color:black;
+  font-family: Georgia, serif;
+  font-size: 30px;
+
+}
+
+.titleblue {
+  
+  display: none;
+  margin-left: 60px;
+  color:#3399ff;
+  font-family: myLastFont;
+  font-size: 80px;
+
+}
+
+
+
+.title1 {
+  
+  display: none;
+  margin-left: 60px;
+  color: #3399ff;
+  font-family: myLastFont;
+  font-size: 150px;
+}
+
+
+
+
+
+.title2 {
+
+  margin-top: 2px;
+	margin-left: 60px;
+  color:black;
+  font-family: Georgia, serif;
+  font-size: 30px;
+
+}
+
+.titleblue1 {
+  
+  display: none;
+  margin-left: 60px;
+  color:#3399ff;
+  font-family: myLastFont;
+  font-size: 80px;
+  margin-top: 1px;
+
+}
+
+
+
+.message {
+  margin-bottom: 10px;
+}
+
+.work1 { 
+  margin-right: 0px;
+  margin-left: 0px;
+   display: none;
+}
+
+
+.work1.1 { 
+  margin-right: 0px;
+  margin-left: 0px;
+  
+}
+
+.work2 { 
+    display: none;
+    margin-right: 0px;
+  margin-left: 0px;
+}
+
+.work3 { 
+display: none;
+margin-right: 0px;
+  margin-left: 0px;
+}
+
+.work4 { 
+display: none;
+margin-right: 0px;
+  margin-left: 0px;
+}
+
+.work5 { 
+display: none;
+margin-right: 0px;
+  margin-left: 0px;
+}
+
+.work11 {}
+.work21 {}
+.work31 {}
+.work41{}
+.work51{}
+
+
+.title2div {
+  margin-top:1px;
+}
+
+
+.click {
+  position: fixed;
+  text-indent: -950px;
+  margin-top: 0px;
+margin-left: 0px;
+margin-right: 0px;
+ padding-left: 100%;
+  height: 60px;
+  background: black;
+  color:white;
+   width: 2000px;
+    border-style: solid;
+    border-color: white;
+     opacity: 0.8;
+
+}
+
+
+.differentfirst {
+  padding-top: 130px;
+  margin-left: 00px;
+  color:#00D2FF;
+  font-family: myLastFont;
+  font-size:4px;
+  margin-top: 0px; 
+  text-align: center;
+
+}
+
+.different {
+  padding-top: 10px;
+  display: none;
+  margin-left: 60px;
+  color:#00D2FF;
+  font-family: myLastFont;
+  font-size: 60px;
+  margin-top: 10px; 
+
+}
+
+
+
+
+.send {
+    font-family: myLastFont;
+   font-size: 20px;
+   letter-spacing: 2px;
+   cursor:pointer;
+  
+}
+
+.epmty {
+    
+  
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(Roboto-BlackItalic.ttf);
+}
+
+@font-face {
+    font-family: mySecondFont;
+    src: url(Roboto-Black.ttf);
+}
+
+
+@font-face {
+    font-family: myThirdFont;
+    src: url(RobotoCondensed-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: myLastFont;
+    src: url(graph_black_paris-web.otf);
+}
+
+@font-face {
+    font-family: myLastLastFont;
+    src: url(Panton-LightitalicCaps.otf);
+}
+
+@font-face {
+    font-family: margin:myHebrewLastFont;
+    src: url(carmelitregular.ttf);
+}
+
+
+
+
+@import url(http://dl.dropboxusercontent.com/u/15746367/fonts/carmela/style.css);
+@import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
+@import url(http://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+
+
