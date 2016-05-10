@@ -4,7 +4,7 @@ $('document').ready(function() {
      var origDocHeight = document.body.offsetHeight;
 
      // now we know the height we can duplicate the body    
-     $("body").contents().clone().appendTo("body");
+     $('body').contents().clone().appendTo('body');
 
 
      $(document).scroll(function(){ // detect scrolling
