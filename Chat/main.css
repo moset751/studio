@@ -1,3 +1,71 @@
+
+
+
+body {padding:10px;
+
+
+background-color:white;}
+
+
+
+#draggable-element {
+
+  z-index: 59;
+  width:314px;
+  height:480px;
+  background-color:none;
+  color:#00FF00;
+  text-align: left;
+  cursor: url('x.cur'), default;
+  position:fixed; top:66%; left:60%;
+  padding-left:0px;
+  margin-top: 10px;
+  transform:rotate(-7deg);
+  text-shadow: 2px 2px black;
+
+
+}
+
+
+
+
+#draggable-element1 {
+  display: none;
+ z-index: 59;
+  width:140px;
+  height:50px;
+  background-color:black;;
+  color:white;
+text-align: center;
+  position:fixed; top:47%; right:21%;
+  margin-left:10px;
+  margin-bottom: 10px;
+border-style: dashed;
+  transform:rotate(-27deg);
+
+}
+
+#draggable-element3 {
+  display: none;
+   z-index: 59;
+  width:314px;
+  height:480px;
+  background-color:#00FF00;;
+  color:white;
+ text-align: left;
+  cursor: url('x.cur'), default;
+  position:fixed; top:10%; left:60%;
+  padding-left:10px;
+  margin-top: 10px;
+  opacity:0.9;
+
+ box-shadow: 0 0 0 3px black;
+  transform:rotate(-7deg);
+animation: 1s animateBorder infinite;;
+
+}
+
+
 .user-count {
 
  display: none;
@@ -34,12 +102,12 @@
 
 
 .title1 {
-  
+  position: fixed;
   display: none;
   margin-left: 60px;
   color: #3399ff;
-  font-family: myLastFont;
-  font-size: 150px;
+  font-family: myLastLastFont;
+  font-size: 450px;
 }
 
 
@@ -74,47 +142,95 @@
 }
 
 .work1 { 
+  display: none;
   margin-right: 0px;
   margin-left: 0px;
-   display: none;
-}
-
-
-.work1.1 { 
-  margin-right: 0px;
-  margin-left: 0px;
+ padding-bottom:0px;
   
+   transform: scale(0.7, 0.7);
+       outline: 2px solid black;
 }
+
+
+
 
 .work2 { 
     display: none;
     margin-right: 0px;
   margin-left: 0px;
+   transform: scale(0.73, 0.73);
+         outline: 2px solid black;
+
 }
 
 .work3 { 
 display: none;
 margin-right: 0px;
   margin-left: 0px;
+   transform: scale(0.73, 0.73);
+       outline: 2px solid black;
 }
 
 .work4 { 
 display: none;
 margin-right: 0px;
   margin-left: 0px;
+   transform: scale(0.73, 0.73);
+        outline: 2px solid black;
 }
 
 .work5 { 
+
 display: none;
 margin-right: 0px;
   margin-left: 0px;
+ transform: scale(0.73, 0.73);
+    outline: 2px solid black;
 }
 
-.work11 {}
-.work21 {}
-.work31 {}
-.work41{}
-.work51{}
+.work6 { 
+display: none;
+margin-right: 0px;
+  margin-left: 0px;
+   transform: scale(0.73, 0.73);
+        outline: 2px solid black;
+}
+
+
+
+.work11 {
+  margin-bottom: 3px;
+     transform: scale(0.73, 0.73);
+        outline: 2px solid black;
+    
+}
+.work21 {
+   margin-bottom: 3px;
+      transform: scale(0.73, 0.73);
+           outline: 2px solid black;
+      
+}
+.work31 {
+   margin-bottom: 3px;
+     transform: scale(0.73, 0.73);
+          outline: 2px solid black;
+   
+}
+.work41{
+  margin-bottom: 3px;
+     transform: scale(0.73, 0.73);
+        outline: 2px solid #00FF00;
+  
+    
+}
+.work51{
+  margin-bottom: 3px;
+      transform: scale(0.73, 0.73);
+      opacity:;
+  
+
+}
+
 
 
 .title2div {
@@ -123,13 +239,14 @@ margin-right: 0px;
 
 
 .click {
+  display: none;
   position: fixed;
   text-indent: -950px;
   margin-top: 0px;
 margin-left: 0px;
 margin-right: 0px;
  padding-left: 100%;
-  height: 60px;
+  height: 00px;
   background: black;
   color:white;
    width: 2000px;
@@ -141,24 +258,37 @@ margin-right: 0px;
 
 
 .differentfirst {
-  padding-top: 130px;
-  margin-left: 00px;
-  color:#00D2FF;
-  font-family: myLastFont;
+  position: fixed;
+  padding-top: 0px;
+  margin-left: 0px;
+  color:#00FF00;
+  font-family: myLastLastFont; 
+  text-decoration:wavy; 
   font-size:4px;
   margin-top: 0px; 
   text-align: center;
+   text-shadow: 10px 2px #ff0000;
 
 }
 
-.different {
-  padding-top: 10px;
-  display: none;
+#different {
+
+  position: fixed; top:60px;
+  z-index: 58;
+  padding-top: 0px;
+   text-shadow: 2px 2px black;
+
   margin-left: 60px;
-  color:#00D2FF;
-  font-family: myLastFont;
-  font-size: 60px;
-  margin-top: 10px; 
+  color:#00FF00;
+  font-family: myLastLastFont;
+  font-size: 100px;
+  margin-top: 3px; 
+  transform:rotate(7deg);
+    cursor: url('x.cur'), default;
+
+
+
+
 
 }
 
@@ -166,17 +296,15 @@ margin-right: 0px;
 
 
 .send {
-    font-family: myLastFont;
+
+    font-family:myLastLastFont;
    font-size: 20px;
    letter-spacing: 2px;
-   cursor:pointer;
+   cursor: pointer;
   
 }
 
-.epmty {
-    
-  
-}
+
 
 @font-face {
     font-family: myFirstFont;
@@ -215,6 +343,9 @@ margin-right: 0px;
 @import url(http://dl.dropboxusercontent.com/u/15746367/fonts/carmela/style.css);
 @import url(http://fonts.googleapis.com/earlyaccess/alefhebrew.css);
 @import url(http://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+
+}
 
 
 
