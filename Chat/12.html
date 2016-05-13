@@ -1,0 +1,46 @@
+<!doctype html>
+
+<head>
+
+
+
+  <style>
+    body {
+      margin: 0px;
+      background-color: black;
+    }
+  
+    .second-line {
+      font-family: Times New Roman;
+      color: white;
+      background-image:url("whitney.jpg");
+      background-size: cover;
+
+      padding:650px;
+      text-align: center;
+    }
+    .second-line:hover {
+      background: black;
+    }
+    .second-line:active {
+     background-image:url("whitney.jpg");
+    }
+ 
+  </style>
+</head>
+
+<body>
+  
+
+  <div class="second-line">
+    
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+  <script>
+    $('.second-line').click(function () {
+      $(this).toggleClass('extra-padding');
+    });
+  </script>
+</body>
