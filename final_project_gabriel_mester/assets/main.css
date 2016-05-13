@@ -1,0 +1,355 @@
+@font-face {
+    font-family: font;
+    /*src: url(GillSansStd-UltraBold.otf);*/
+    src: url(ufonts.com_century.ttf);
+  }
+
+  @font-face {
+    font-family: secondFont;
+    src: url(silverfake.otf);
+
+    /*src: url(GillSansStd-UltraBold.otf);*/
+    /*src: url(AkzidenzGroteskStd-BoldIt.otf);*/
+  }
+
+body {
+  margin: 0;
+  font-family: secondFont;
+  background: linear-gradient(lightgrey,white);
+  height: 300vh;
+  letter-spacing: -1px;
+}
+
+.is-hidden { opacity: 0 !important; }
+
+
+
+@-webkit-keyframes thumb {
+  0% { -webkit-transform: scale(1); }
+  50% { -webkit-transform: scale(0.8); }
+  100% { -webkit-transform: scale(1); }
+}
+
+
+
+
+.avatar0 {   
+  position: fixed;
+  top: 6%;
+  left: 20%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+
+}
+
+
+
+.avatar1 {     
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  top: 5%;
+  left: 40%;
+  border-radius: 100%;
+    -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+   }
+
+.avatar2{   
+  position: fixed;
+  width: 70px;
+  height: 70px;
+  top: 7%;
+  left: 60%;
+  border-radius: 100%;
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+   }
+
+.avatar3 {   
+  position: fixed;
+  top: 30%;
+  left: 5%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar4 { 
+  position: fixed;
+  top: 28%;
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+   }
+
+.avatar5 { 
+  position: fixed;
+  top: 26%;
+  left: 75%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+   -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+
+   }
+
+.avatar6{ 
+  position: fixed;
+  top: 54%;
+  left: 15%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar7 { 
+  position: fixed;
+  top: 55%;
+  left: 40%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+
+}
+
+.avatar8 { 
+  position: fixed;
+  top: 56%;
+  left: 60%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar9 {
+ position: fixed;
+  top: 74%;
+  left: 35%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar10 { 
+  position: fixed;
+  top: 73%;
+  left: 55%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar11 { 
+  position: fixed;
+  top: 71%;
+  left: 75%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar12 { 
+  position: fixed;
+  top: 92%;
+  left: 50%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+.avatar13 { 
+  position: fixed;
+  top: 91%;
+  left: 60%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%; 
+ -webkit-animation-name: thumb;
+  -webkit-animation-duration: 250ms;
+  -webkit-transform-origin:50% 50%;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+/* Username form styles */
+
+
+
+.username-form {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -160px;
+  margin-top: -60px;
+  width: 300px;
+  height: 20px;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 20px rgba(0,0,0,.125);
+  opacity: 1;
+  transition: opacity .3s;
+  z-index: +100;
+  /*border-style: solid;*/
+            border-width: 2.5px;
+            border-color: black;
+}
+
+
+
+.message {
+  padding: 40px;
+  margin-right: 40px;
+  transition: 4s;
+  position: fixed;
+
+}
+
+
+
+
+          #bouton {
+            position: absolute;
+            left: 5%;
+            top: 5%;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%; 
+            background: white;
+            z-index: +50;
+            transition: 0.5s;
+            /*border-style: solid;*/
+            border-width: 2.5px;
+            border-color: black;
+            box-shadow: 0 0 20px rgba(0,0,0,.125);
+          }
+
+
+
+              #remote {
+              position: absolute;
+              display: none;
+              top: 5%;
+              left: 5%;
+              font-family: secondFont;
+              font-size: 20px;
+              color: black;
+              width: 100%;
+              margin: 5px;
+              z-index: +100;
+              transition: 0.3s;
+              cursor: pointer;
+
+             /* display: none;*/
+            }
+
+              #thirteen {
+                line-height: 80%;
+                margin: 5%;
+              }
+
+               .petits {
+              margin-top: 9px;
+              }
+
+              #firstLine {               
+              position: absolute;
+              text-align: center;
+              left: 5%;
+              font-family: secondFont;  
+              }
+
+            #secondLine {
+              
+              position: absolute;
+              text-align: center;
+              left: 35%;
+              font-family: secondFont;   
+            }
+
+              #thirdLine { 
+              position: absolute;
+              text-align: center;
+              right: 20%;
+              font-family: secondFont;
+            }
+
+
+/*            #thirteen {
+              margin-top: 2%;              
+              top: 110%;
+              right: 20%;             
+      position: absolute;
+      font-size: 15px;
+            }
+
+#thirteen:hover {
+  color: red; }
+*/
+           
+           
+
+            
+         
